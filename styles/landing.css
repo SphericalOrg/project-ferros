@@ -11,6 +11,7 @@ body, html {
     box-sizing: border-box;
     margin: 0;
     background-color: #2C2C2C;
+    font-family: "Inter";
 }
 
 .bg-image {
@@ -69,17 +70,4 @@ body, html {
     width: fit-content;
     padding: 10px;
     border-radius: 15px;
-}
-.caja
-{
-    display: flex;
-    width: 472px;
-    height: 319px;
-    padding: 22px 26px;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #000;
 }
