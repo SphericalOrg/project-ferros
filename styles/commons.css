@@ -1,0 +1,9 @@
+.page-header{
+    display: flex;
+    height: 6.625rem;
+    padding: 0rem 3.8125rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+}
