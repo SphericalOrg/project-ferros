@@ -177,3 +177,57 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.seats-component{
+    text-align: center;
+    display: inline-flex;
+    padding: 1.125rem 1.75rem;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    border-radius: 0.9375rem;
+    gap: 2.09rem;
+}
+
+.seats-component-icon{
+    display: flex;
+    width: 4.75rem;
+    align-items: center;
+    align-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.seats-component-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3125rem;
+}
+
+.seats-component-body-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.seats-component-body-text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.receipt-button{
+    font-size: 1.25rem;
+    display: flex;
+    height: 2.75rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    background-color: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%), rgba(217, 217, 217, 0.87);
+}
