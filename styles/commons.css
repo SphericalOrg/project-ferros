@@ -123,3 +123,57 @@
     border-radius: 0.9375rem;
     
 }
+
+.standard-text-input{
+    height: 2.625rem;
+    flex: 1 0 0;
+    background: #FFF;
+    border-radius: 1.25rem;
+}
+
+.train-component{
+    text-align: center;
+    display: inline-flex;
+    padding: 1.125rem 1.75rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.9375rem;
+    background: #FFF;
+}
+
+.train-component-body{
+    display: flex;
+    width: 18.1875rem;
+    height: 10.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3125rem;
+}
+
+.train-component-icon{
+    display: flex;
+    width: 6.89269rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.train-component-body-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.train-component-body-text-box{
+    display: flex;
+    width: 9.3125rem;
+    height: 2.4375rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
