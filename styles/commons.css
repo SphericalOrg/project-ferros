@@ -1,3 +1,63 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("/assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+*{
+    margin: 0px;  
+}
+
+.top-trips-container{
+    display: flex;
+    padding: 2.5rem 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.top-trips{
+    display: flex;
+    padding: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    backdrop-filter: blur(5px);
+    background: rgba(29, 27, 17, 0.65);
+    border-radius: 0.9375rem; 
+}
+
+.travel-card{
+    display: flex;
+    padding: 2.625rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    background: #FFFCED;
+    border-radius: 1.25rem;
+}
+
+.button-group{
+    display: flex;
+    width: 19.75rem;
+    height: 5.75rem;
+    align-items: center;
+    gap: 16px; 
+}
+
+.session-button{
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid #2C2C2C;
+}
+
 .page-header{
     display: flex;
     height: 6.625rem;
@@ -6,4 +66,60 @@
     align-items: center;
     flex-shrink: 0;
     align-self: stretch;
+    background: rgba(23, 21, 21, 0.40);
+    backdrop-filter: blur(3px);
+}
+
+.slogan-box{
+    display: flex;
+    padding: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: rgba(29, 27, 17, 0.65);
+    backdrop-filter: blur(5px);
+    border-radius: 0.9375rem;
+    
+}
+
+.slogan{
+    font-family: Inter;
+    font-size: 4.375rem;
+    font-weight: 700;
+    color: #FBBC05;
+    background: linear-gradient(90deg, #F7D40A 0%, #FBBC05 100%);
+    background-clip: text;
+}
+
+.tickets{
+    display: flex;
+    width: 78.4375rem;
+    padding: 0.625rem;
+    align-items: center;
+    gap: 0.3125rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.tickets-select-box{
+    display: flex;
+    width: 22.0625rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+
+.tickets-confirm-button{
+    display: flex;
+    height: 4rem;
+    padding: 0.625rem 1.8125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: #F7D40A;
+    border-radius: 0.9375rem;
+    
 }
