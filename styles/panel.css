@@ -1,6 +1,7 @@
 ﻿:root
 {
     font-family: "Inter", serif;
+    background-image: none;
 }
 *
 {
@@ -84,7 +85,7 @@
     width: auto;
 }
 
-.content
+.content-panel
 {
     display: flex;
     height: 871px;

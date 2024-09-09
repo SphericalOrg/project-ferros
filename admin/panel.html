@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-  <link rel="stylesheet" href="/styles/panel.css">
   <link rel="stylesheet" href="/styles/commons.css">
+  <link rel="stylesheet" href="/styles/panel.css">
   <link rel="stylesheet" href="/styles/table.css">
   <script src="/js/sidebar.js"></script>
   <meta charset="UTF-8">
@@ -13,10 +13,10 @@
   <div id="mySidenav" class="sidenav">
     <img src="/assets/Logo%20Default.png" alt="">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Panel</a>
-    <a href="#">Trenes</a>
-    <a href="#">Usuarios</a>
-    <a href="#">Soporte</a>
+    <a href="/admin/panel.html">Panel</a>
+    <a href="/admin/trainman.html">Trenes</a>
+    <a href="/admin/userman.html">Usuarios</a>
+    <a href="/admin/index.html">Log Out</a>
   </div>
 
 <!-- Use any element to open the sidenav -->
@@ -36,7 +36,7 @@
     </div>
   </nav>
 </div>
-<div class="content">
+<div class="content-panel">
   <div class="button-frame">
     <button type="button">Agendar Viaje</button>
     <button type="button">Agregar Usuario</button>
@@ -230,9 +230,11 @@
         <td><span class="action">Action</span></td>
         <td><button class="button">Ver Más</button></td>
       </tr>
+      <tr>
+        <td><a href="/admin/userman.html">Ver mas...</a></td>
+      </tr>
       </tbody>
     </table>
-      <button type="button">Ver Mas...</button>
   </div>
 </div>
 </body>
