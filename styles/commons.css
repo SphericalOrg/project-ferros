@@ -310,13 +310,11 @@
 .your-trips-container{
     overflow-x: scroll;
     display: flex;
-    width: 121.19569rem;
     padding: 1.25rem 2.5rem 0rem 2.5rem;
     align-items: flex-start;
-    align-content: flex-start;
     gap: 0.625rem;
     flex: 1 0 0;
-    flex-wrap: wrap;
+    align-self: stretch;
 }
 
 .filters-title{
