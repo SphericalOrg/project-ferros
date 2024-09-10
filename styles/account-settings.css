@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.625rem;
+    gap: 1rem;
     align-self: stretch;
 }
 
@@ -130,6 +130,24 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    border-style: none;
+}
+
+.save-profile{
+    display: flex;
+    width: 22.5rem;
+    height: 2.75rem;
+    padding: 0.3125rem 0rem;
+    justify-content: center;
+    align-items: center;
+    background: #149814;
+    border-radius: 0.625rem;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-style: none;
 }
 
 .ammount{
