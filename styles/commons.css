@@ -21,6 +21,10 @@
     margin: 0px;  
 }
 
+a{
+    color: #FFF;
+}
+
 .top-trips-container{
     display: flex;
     padding: 2.5rem 0rem;
