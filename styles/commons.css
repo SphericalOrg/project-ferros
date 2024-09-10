@@ -14,7 +14,8 @@
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("/assets/background.jpg");
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 *{
@@ -23,6 +24,42 @@
 
 a{
     color: #FFF;
+    text-decoration: none;
+}
+
+.logo-container {
+    position: relative;
+    width: 53px;
+    height: 53px;
+    overflow: hidden;
+    transition: width 1s ease;
+}
+
+.logo-container img {
+    position: absolute;
+    transition: transform 1s ease;
+}
+
+.logo-container img.default {
+    width: 53px;
+    height: 53px;
+    z-index: 2;
+}
+
+.logo-container img.hovered {
+    width: 184px;
+    height: 53px;
+    transform: translateX(-100%);
+    transform-origin: left;
+    z-index: 1;
+}
+
+.logo-container:hover {
+    width: 184px;
+}
+
+.logo-container:hover img.hovered {
+    transform: translateX(0);
 }
 
 .top-trips-container{
@@ -110,18 +147,19 @@ a{
 
 .tickets{
     display: flex;
-    width: 78.4375rem;
+    width: 75%;
     padding: 0.625rem;
     align-items: center;
     gap: 0.3125rem;
     border-radius: 0.9375rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
+    justify-content: space-between;
 }
 
 .tickets-select-box{
     display: flex;
-    width: 22.0625rem;
+    width: 28%;
     height: 4rem;
     justify-content: center;
     align-items: center;
@@ -133,17 +171,15 @@ a{
 }
 
 .tickets-confirm-button{
+    width: 15%;
     font-size: x-large;
     display: flex;
     height: 4rem;
-    width: 100%;
     padding: 0.625rem 1.8125rem;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
     background: #F7D40A;
     border-radius: 0.9375rem;
-    
 }
 
 .standard-text-input{
