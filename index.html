@@ -22,9 +22,32 @@
             <h1 class="slogan">Viaja por tren. Rapido y Puntual.</h1>
         </div>
         <div class="tickets">
-            <select name="origin" class="tickets-select-box">De donde partes?</select>
-            <select name="origin" class="tickets-select-box">A donde vas?</select>
-            <select name="origin" class="tickets-select-box">Fecha de viaje</select>
+            <select name="origin" id="origin" class="tickets-select-box">
+                <option value="" selected disabled>¿De donde partes?</option>
+                <option value="Victoria">Victoria</option>
+                <option value="PUA">PUA</option>
+                <option value="Perquenco">Perquenco</option>
+                <option value="Quillem">Quillem</option>
+                <option value="Lautaro">Lautaro</option>
+                <option value="Lautaro Centro">Lautaro Centro</option>
+                <option value="Pillanlelbun">Pillanlelbun</option>
+                <option value="Cajon">Cajon</option>
+                <option value="Temuco">Temuco</option>
+            </select>
+            <select name="destination" id="destination" class="tickets-select-box">
+                <option value="" selected disabled>¿A donde vas?</option>
+                <option value="Victoria">Victoria</option>
+                <option value="PUA">PUA</option>
+                <option value="Perquenco">Perquenco</option>
+                <option value="Quillem">Quillem</option>
+                <option value="Lautaro">Lautaro</option>
+                <option value="Lautaro Centro">Lautaro Centro</option>
+                <option value="Pillanlelbun">Pillanlelbun</option>
+                <option value="Cajon">Cajon</option>
+                <option value="Temuco">Temuco</option>
+            </select>
+            <input type="date" id="travel-date" name="date" class="tickets-select-box">
+            <script src="/js/tickets.js"></script>
             <button class="tickets-confirm-button">Buscar</button>
         </div>
         <div class="top-trips">
