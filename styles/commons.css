@@ -113,6 +113,7 @@
     flex-shrink: 0;
     border-radius: 0.9375rem;
     text-align: center;
+    font-size: x-large;
 }
 
 .tickets-confirm-button{
@@ -330,3 +331,4 @@
     border-radius: 0.9375rem 0.3125rem 0.3125rem 0.9375rem;
     background: #F7D40A;
 }
+
