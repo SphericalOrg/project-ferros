@@ -12,6 +12,7 @@
     height: 100vh;
 }
 .select-ticket {
+    background-color: #FFF;
     display: inline-flex;
     flex-direction: column;
     height: 576px;
