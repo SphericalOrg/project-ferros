@@ -17,6 +17,7 @@
     gap: 29px;
     padding: 25px 20px;
     border-radius: 20px;
+    background: white;
     box-shadow: var(--drop-shadow-400);
 }
 
@@ -111,16 +112,18 @@
 }
 
 .property-pasajeros .text-input {
-    padding: 10px;
+    padding: 5px;
     flex: 1;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
 .property-pasajeros .text-field {
-    margin-top: -1px;
     color: #797979;
-    line-height: 16px;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    width: 100%;
 }
 
 .property-pasajeros .button-confirm {
