@@ -32,12 +32,12 @@ a{
     width: 53px;
     height: 53px;
     overflow: hidden;
-    transition: width 1s ease;
+    transition: width 0.3s ease;
 }
 
 .logo-container img {
     position: absolute;
-    transition: transform 1s ease;
+    transition: transform 0.42s ease;
 }
 
 .logo-container img.default {
