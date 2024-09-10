@@ -8,13 +8,9 @@
 }
 .traveler-points{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 70px 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f7f7f7;
+    height: 100vh;
 }
 .traveler-points .metrics {
     background-color: #e1e1e1cc;
@@ -105,6 +101,7 @@
     height: 40px;
     background-color: #f7d40a;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .traveler-points .state-layer {
