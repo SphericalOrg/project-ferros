@@ -8,11 +8,10 @@
     <title>Transportes Ferros</title>
 </head>
 <body>
-    <link rel="page-header" href="/components/page-header.html">
     <header class="page-header">
         <img src="/assets/Logo Small.png">
         <a href="sigue-tu-viaje.html">Sigue tu viaje</a>
-        <a>Conocenos</a>
+        <a id="contacto-summon" href="#">Conocenos</a>
         <div class="button-group">
             <button class="session-button" style="background-color: #DEDEDE;">Crear Cuenta</button>
             <button class="session-button" style="background-color: #F7D40A;">Iniciar Sesion</button>
@@ -22,10 +21,58 @@
         <div class="slogan-box">
             <h1 class="slogan">Viaja por tren. Rapido y Puntual.</h1>
         </div>
+
+        <div class="contacto" id="contacto">
+            <div class="contacto-content">
+                <span class="close">&times;</span>
+                <div class="social-container">
+                    <img src="/assets/Instagram.png">
+                    <a class="strawberry-was-taken" href="https://www.instagram.com/strawberry_was_taken?igsh=OTk3OTZ4em4zNHV5">
+                        @strawberry_was_taken
+                    </a>
+                </div>
+                <div class="social-container">
+                    <img src="/assets/Instagram.png">
+                    <a class="bfl" href="https://www.instagram.com/255bfl?igsh=Yjkwc201Y3hmeXEy">
+                        @255bfl 󰘧
+                    </a>
+                </div>
+                <div class="social-container">
+                    <img src="/assets/Instagram.png">
+                    <a class="f33gz" href="https://www.instagram.com/f33gz?igsh=MWQxanl3azNmbmQzdQ==">
+                        @f33gz
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="tickets">
-            <select name="origin" class="tickets-select-box">De donde partes?</select>
-            <select name="origin" class="tickets-select-box">A donde vas?</select>
-            <select name="origin" class="tickets-select-box">Fecha de viaje</select>
+            <select name="origin" id="origin" class="tickets-select-box">
+                <option value="" selected disabled>¿De donde partes?</option>
+                <option value="Victoria">Victoria</option>
+                <option value="PUA">PUA</option>
+                <option value="Perquenco">Perquenco</option>
+                <option value="Quillem">Quillem</option>
+                <option value="Lautaro">Lautaro</option>
+                <option value="Lautaro Centro">Lautaro Centro</option>
+                <option value="Pillanlelbun">Pillanlelbun</option>
+                <option value="Cajon">Cajon</option>
+                <option value="Temuco">Temuco</option>
+            </select>
+            <select name="destination" id="destination" class="tickets-select-box">
+                <option value="" selected disabled>¿A donde vas?</option>
+                <option value="Victoria">Victoria</option>
+                <option value="PUA">PUA</option>
+                <option value="Perquenco">Perquenco</option>
+                <option value="Quillem">Quillem</option>
+                <option value="Lautaro">Lautaro</option>
+                <option value="Lautaro Centro">Lautaro Centro</option>
+                <option value="Pillanlelbun">Pillanlelbun</option>
+                <option value="Cajon">Cajon</option>
+                <option value="Temuco">Temuco</option>
+            </select>
+            <input type="date" id="travel-date" name="date" class="tickets-select-box">
+            <script src="/js/tickets.js"></script>
             <button class="tickets-confirm-button">Buscar</button>
         </div>
         <div class="top-trips">
@@ -46,5 +93,6 @@
             </div>
         </div>
     </section>
+    <script src="/js/contacto.js"></script>
 </body>
 </html>

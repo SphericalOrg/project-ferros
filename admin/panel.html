@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="/styles/commons.css">
+  <link rel="stylesheet" href="/styles/panel.css">
+  <link rel="stylesheet" href="/styles/table.css">
+  <script src="/js/sidebar.js"></script>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <img src="/assets/Logo%20Default.png" alt="">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/admin/panel.html">Panel</a>
+    <a href="/admin/trainman.html">Trenes</a>
+    <a href="/admin/userman.html">Usuarios</a>
+    <a href="/admin/index.html">Log Out</a>
+  </div>
+
+<!-- Use any element to open the sidenav -->
+<!--<span onclick="openNav()">open</span>-->
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  <nav class="navbar">
+    <svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.28574C0 1.10228 0.9594 0.142883 2.14286 0.142883H27.8571C29.0406 0.142883 30 1.10228 30 2.28574C30 3.4692 29.0406 4.4286 27.8571 4.4286H2.14286C0.9594 4.4286 0 3.4692 0 2.28574Z" fill="#80858D"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13C0 11.8166 0.9594 10.8572 2.14286 10.8572H27.8571C29.0406 10.8572 30 11.8166 30 13C30 14.1835 29.0406 15.1429 27.8571 15.1429H2.14286C0.9594 15.1429 0 14.1835 0 13Z" fill="#80858D"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 23.7143C0 22.5308 0.9594 21.5714 2.14286 21.5714H27.8571C29.0406 21.5714 30 22.5308 30 23.7143C30 24.8978 29.0406 25.8571 27.8571 25.8571H2.14286C0.9594 25.8571 0 24.8978 0 23.7143Z" fill="#80858D"/>
+    </svg>
+    <div class="user">
+      <img src="/assets/Logo%20Small.png" alt="">
+      <p>Administrador</p>
+    </div>
+  </nav>
+</div>
+<div class="content-panel">
+  <div class="button-frame">
+    <button type="button">Agendar Viaje</button>
+    <button type="button">Agregar Usuario</button>
+  </div>
+  <div class="trains">
+    <p>Trenes en ruta</p>
+    <div class="train-box">
+      <div class="train-component">
+        <div class="train-component-icon">
+          <p><b>Train #</b>505</p>
+          <img src="/assets/icon_train.png" alt="Train Icon">
+          <p><b>Estado</b><br>Completado</p>
+        </div>
+
+        <div class="train-component-body">
+          <div class="train-component-body-row">
+            <div class="train-component-body-text-box">
+              <p><b>Origen</b></p>
+              <p>Temuco</p>
+            </div>
+            <div class="train-component-body-text-box">
+              <p><b>Destino</b></p>
+              <p>Padre las Casas</p>
+            </div>
+          </div>
+
+          <div class="train-component-body-row">
+            <div class="train-component-body-text-box">
+              <p><b>Salida</b></p>
+              <p>11:30</p>
+            </div>
+            <div class="train-component-body-text-box">
+              <p><b>Llegada</b></p>
+              <p>13:00</p>
+            </div>
+          </div>
+
+          <div class="train-component-body-row">
+            <div class="train-component-body-text-box">
+              <p><b>Pasajeros</b></p>
+              <p>11</p>
+            </div>
+            <div class="train-component-body-text-box">
+              <!-- Empty div for alignment purposes -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="train-component">
+        <div class="train-component-icon">
+          <p><b>Train #</b>505</p>
+          <img src="/assets/icon_train.png" alt="Train Icon">
+          <p><b>Estado</b><br>Completado</p>
+        </div>
+
+        <div class="train-component-body">
+          <div class="train-component-body-row">
+            <div class="train-component-body-text-box">
+              <p><b>Origen</b></p>
+              <p>Temuco</p>
+            </div>
+            <div class="train-component-body-text-box">
+              <p><b>Destino</b></p>
+              <p>Padre las Casas</p>
+            </div>
+          </div>
+
+          <div class="train-component-body-row">
+            <div class="train-component-body-text-box">
+              <p><b>Salida</b></p>
+              <p>11:30</p>
+            </div>
+            <div class="train-component-body-text-box">
+              <p><b>Llegada</b></p>
+              <p>13:00</p>
+            </div>
+          </div>
+
+          <div class="train-component-body-row">
+            <div class="train-component-body-text-box">
+              <p><b>Pasajeros</b></p>
+              <p>11</p>
+            </div>
+            <div class="train-component-body-text-box">
+              <!-- Empty div for alignment purposes -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="train-component">
+        <div class="train-component-icon">
+          <p><b>Train #</b>505</p>
+          <img src="/assets/icon_train.png" alt="Train Icon">
+          <p><b>Estado</b><br>Completado</p>
+        </div>
+
+        <div class="train-component-body">
+          <div class="train-component-body-row">
+            <div class="train-component-body-text-box">
+              <p><b>Origen</b></p>
+              <p>Temuco</p>
+            </div>
+            <div class="train-component-body-text-box">
+              <p><b>Destino</b></p>
+              <p>Padre las Casas</p>
+            </div>
+          </div>
+
+          <div class="train-component-body-row">
+            <div class="train-component-body-text-box">
+              <p><b>Salida</b></p>
+              <p>11:30</p>
+            </div>
+            <div class="train-component-body-text-box">
+              <p><b>Llegada</b></p>
+              <p>13:00</p>
+            </div>
+          </div>
+
+          <div class="train-component-body-row">
+            <div class="train-component-body-text-box">
+              <p><b>Pasajeros</b></p>
+              <p>11</p>
+            </div>
+            <div class="train-component-body-text-box">
+              <!-- Empty div for alignment purposes -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="user-admin-container">
+    <p>Usuarios Registrados</p>
+
+    <table>
+      <thead>
+      <tr>
+        <th class="checkbox"><label>
+          <input type="checkbox">
+        </label></th>
+        <th>Table Header</th>
+        <th>Table Header</th>
+        <th>Table Header</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="checkbox"><label>
+          <input type="checkbox">
+        </label></td>
+        <td class="icon-name"><img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic"> Table Cell</td>
+        <td><span class="status">- Status</span></td>
+        <td><span class="action">Action</span></td>
+        <td><button class="button">Ver Más</button></td>
+      </tr>
+      <tr class="selected-row">
+        <td class="checkbox"><label>
+          <input type="checkbox" checked>
+        </label></td>
+        <td class="icon-name"><img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic"> Table Cell</td>
+        <td><span class="status">- Status</span></td>
+        <td><span class="action">Action</span></td>
+        <td><button class="button">Ver Más</button></td>
+      </tr>
+      <tr>
+        <td class="checkbox"><label>
+          <input type="checkbox">
+        </label></td>
+        <td class="icon-name"><img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic"> Table Cell</td>
+        <td><span class="status">- Status</span></td>
+        <td><span class="action">Action</span></td>
+        <td><button class="button">Ver Más</button></td>
+      </tr>
+      <tr>
+        <td class="checkbox"><label>
+          <input type="checkbox">
+        </label></td>
+        <td class="icon-name"><img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic"> Table Cell</td>
+        <td><span class="status">- Status</span></td>
+        <td><span class="action">Action</span></td>
+        <td><button class="button">Ver Más</button></td>
+      </tr>
+      <tr>
+        <td class="checkbox"><label>
+          <input type="checkbox">
+        </label></td>
+        <td class="icon-name"><img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic"> Table Cell</td>
+        <td><span class="status">- Status</span></td>
+        <td><span class="action">Action</span></td>
+        <td><button class="button">Ver Más</button></td>
+      </tr>
+      <tr>
+        <td><a href="/admin/userman.html">Ver mas...</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>
