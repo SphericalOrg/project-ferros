@@ -11,7 +11,7 @@
 
 
 :root{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter";
     background-image: url("/assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,6 +73,7 @@ a{
 }
 
 .top-trips{
+    color: #F7D40A;
     display: flex;
     padding: 2.5rem;
     flex-direction: column;
@@ -85,6 +86,8 @@ a{
 }
 
 .travel-card{
+    color: #000;
+    font-weight: bolder;
     display: flex;
     padding: 2.625rem 3rem;
     flex-direction: column;
@@ -115,6 +118,7 @@ a{
 
 .page-header{
     color: #FFF;
+    width: 100%;
     display: flex;
     height: 6.625rem;
     padding: 0rem 3.8125rem;
@@ -139,7 +143,6 @@ a{
 }
 
 .slogan{
-    font-family: Inter;
     font-size: 4.375rem;
     font-weight: 700;
     color: #FBBC05;
@@ -148,9 +151,12 @@ a{
 }
 
 .tickets{
+    
+    overflow: hidden;
     display: flex;
     width: 75%;
-    padding: 0.625rem;
+    min-width: 666px;
+    padding: 0.625rem 1rem;
     align-items: center;
     gap: 0.3125rem;
     border-radius: 0.9375rem;
@@ -160,12 +166,14 @@ a{
 }
 
 .tickets-select-box{
+    opacity: 60%;
+    font-family: "Inter";
+    font-weight: 500;
     display: flex;
-    width: 28%;
+    width: 27%;
     height: 4rem;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
     flex-shrink: 0;
     border-radius: 0.9375rem;
     text-align: center;
@@ -173,7 +181,8 @@ a{
 }
 
 .tickets-confirm-button{
-    width: 15%;
+    color: #000;
+    width: 13%;
     font-size: x-large;
     display: flex;
     height: 4rem;
