@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="/styles/commons.css">
-    <link rel="stylesheet" href="/styles/passenger-information.css">
+    <link rel="stylesheet" href="/styles/payment-page.css">
 </head>
 <body>
-<link rel="page-header" href="/components/page-header.html">
 <header class="page-header">
   <div class="logo-container" onclick="window.location.href = 'index.html';">
     <img src="/assets/Logo Small.png" class="default">
@@ -44,17 +43,17 @@
   </div>
 </div>
 <section class="conteiner">
-  <div class="property-pasajeros">
+  <div class="payment-passenger-details">
     <div class="frame">
       <div class="unselected-part"><div class="unselected-text">Servicios</div></div>
       <div class="unselected-part"><div class="unselected-text">Asientos</div></div>
-      <div class="selected-part"><div class="selected-text">Pasajeros</div></div>
-      <div class="unselected-part"><div class="unselected-text">Pago</div></div>
+      <div class="unselected-part"><div class="unselected-text">Pasajeros</div></div>
+      <div class="selected-part"><div class="selected-text">Pago</div></div>
+      <div class="timer-part"><div class="timer-text">Tiempo Restante 5:00</div></div>
     </div>
     <div class="passenger-data">
       <div class="passenger-banner">
-        <div class="passenger-text-wrapper"><div class="passenger-text">Pasajero 1</div></div>
-        <div class="passenger-text-wrapper"><div class="passenger-text">Bagon 1, Asiento 31</div></div>
+        <div class="passenger-text-wrapper"><div class="passenger-text">Datos del comprador</div></div>
       </div>
       <div class="passenger-form">
         <div class="text-input"><input type="rut" id="rut" role="combobox" class="text-field" placeholder="Rut"></div>
@@ -75,34 +74,72 @@
           </select>
         </div>
       </div>
-    </div>
-    <div class="passenger-data">
-      <div class="passenger-banner">
-        <div class="passenger-text-wrapper"><div class="passenger-text">Pasajero 2</div></div>
-        <div class="passenger-text-wrapper"><div class="passenger-text">Bagon 1, Asiento 32</div></div>
+      <div class="contact-form">
+        <div class="text-input"><input type="email" id="email" role="combobox" class="text-field" placeholder="Email"></div>
+        <div class="text-input"><input class="text-field" placeholder="Telefono"></div>
       </div>
-      <div class="passenger-form">
-        <div class="text-input"><input type="rut" id="rut" class="text-field" placeholder="Rut"></div>
-        <div class="text-input"><input class="text-field" placeholder="Nombre"></div>
-        <div class="text-input"><input class="text-field" placeholder="Apellido"></div>
-        <div class="text-input">
-          <select class="text-field" name="nacionalidad" id="nacionalidad">
-            <option value=""selected disabled>Nacionalidad</option>
-            <option value="Chile">Chile</option>
-            <option value="Argentina">Argentina</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Colombia">Colombia</option>
-            <option value="Ecuador">Ecuador</option>
-            <option value="Peru">Peru</option>
-            <option value="España">España</option>
-            <option value="Dinamarca">Dinamarca</option>
-            <option value="Venezuela">Venezuela</option>
-          </select>
+    </div>
+    <div class="payment-details">
+      <div class="payment-method">
+        <div class="payment-banner">
+          <div class="payment-text-wrapper">
+            <p class="passenger-text">Metodo de Pago</p>
+          </div>
+          <div class="payment-text-wrapper">
+            <p class="passenger-text">Trene puntos</p>
+          </div>
+        </div>
+
+        <div class="frame-2">
+          <div class="frame-3">
+            <div class="frame-4">
+              <img class="icon" src="/assets/payment_method_icon.png" alt="">
+              <img class="icon" src="/assets/payment_method_icon.png" alt="">
+            </div>
+            <div class="frame-4">
+              <img class="icon" src="/assets/payment_method_icon.png" alt="">
+              <img class="icon" src="/assets/payment_method_icon.png" alt="">
+            </div>
+          </div>
+          <div>
+            <p>97</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="payment-method">
+        <div class="payment-detail-frame">
+          <div class="unselected-part">
+            <p class="unselected-text">Detalle</p>
+          </div>
+          <p> <b>Train#</b> 505</p>
+        </div>
+        <div class="route-information">
+          <p><b>Origen</b> Temuco</p>
+          <p><b>Destino</b> Victoria</p>
+          <p><b>Salida</b> 11:30</p>
+        </div>
+        <div class="route-information">
+          <p><b>Detalle</b> 2x Boletos de tren clasico</p>
+          <p><b>$ 800 c/u</b></p>
+        </div>
+        <div class="route-information">
+          <p><b>Subtotal</b></p>
+          <p><b>$ 1600</b></p>
+        </div>
+        <div class="route-information">
+          <p><b>Descuento</b></p>
+          <p><b>$ 0</b></p>
+        </div>
+        <div class="route-information">
+          <p><b>Total</b></p>
+          <p><b>$ 1600</b></p>
+          <div class="pay-part"><div class="pay-text">Pagar</div></div>
         </div>
       </div>
     </div>
-  <div class="button-confirm"><div class="text-confirm">Confirmar</div></div>
-</div>
+    </div>
 </section>
+<script src="/js/socials.js"></script>
 </body>
 </html>
