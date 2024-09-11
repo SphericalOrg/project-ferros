@@ -456,3 +456,8 @@ a{
     font-family: "JetBrainsMono Nerd Font";
     color: #000;
 }
+
+#logged
+{
+    display: none;
+}
