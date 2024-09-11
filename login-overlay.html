@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="/styles/login-overlay.css">
     <link rel="stylesheet" href="/styles/commons.css">
-    <script src="/js/overlay.js"></script>
+    <script src="/js/login.js"></script>
     <script src="https://accounts.google.com/gsi/client" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,49 @@
 <body>
 
 <div>
-    <div id="overlay">
-        <div class="login-content">   
+    <div class="popup-overlay" id="register">
+        <div class="overlay-content">   
+            <div class="section-header">Registrate</div>
+            <div id="g_id_onload"
+                data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                data-login_uri="https://your.domain/your_login_endpoint"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                data-type="standard"
+                data-size="large"
+                data-theme="outline"
+                data-text="sign_in_with"
+                data-shape="circle"
+                data-logo_alignment="left">
+            </div> 
+            <div class="separator">
+                <p>-- o --</p>
+            </div>
+            <div class="section-body">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="input-group">
+                    <label for="username">Contraseña</label>
+                    <input type="username" id="username" name="username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="input-group">
+                    <label for="password">Confirmar Contraseña</label>
+                    <input type="password" id="password" name="password">
+                </div>
+            </div>
+            <button type="submit">Registrarse</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="login">
+        <div class="overlay-content">   
             <div class="section-header">Inicia Sesión</div>
             <div id="g_id_onload"
                 data-client_id="YOUR_GOOGLE_CLIENT_ID"
@@ -26,7 +67,7 @@
                 data-size="large"
                 data-theme="outline"
                 data-text="sign_in_with"
-                data-shape="rectangular"
+                data-shape="pill"
                 data-logo_alignment="left">
             </div> 
             <div class="separator">

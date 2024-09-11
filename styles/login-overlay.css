@@ -1,4 +1,4 @@
-#overlay {
+.popup-overlay {
     position: absolute; /* Sit on top of the page content */
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
@@ -16,7 +16,7 @@
     justify-content: center;
   }
 
-.login-content{
+.overlay-content{
     display: flex;
     flex-direction: column;
     background: white;
@@ -86,6 +86,6 @@ button
 
 .g_id_signin
 {
-    width: fit-content;
+    /*width: fit-content;*/
     margin: auto;
 }
