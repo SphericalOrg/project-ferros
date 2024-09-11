@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/styles/commons.css">
     <link rel="stylesheet" href="/styles/seleccionar-asientos.css">
     <link rel="stylesheet" href="/styles/login-overlay.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 </head>
 <body>
     <div class="popup-overlay" id="register">
@@ -90,7 +91,7 @@
             <img src="/assets/Logo Default.png" class="hovered">
         </div>
         <a href="tracking.html">Sigue tu viaje</a>
-        <a id="contacto-summon" href="#">Conocenos</a>
+        <a href="#" onclick="summon()">Conocenos</a>
         <a href="traveler-points.html">Canjea Trenepuntos</a>
         <div class="account">
             <div class="user">
@@ -108,7 +109,7 @@
             <img src="/assets/Logo Default.png" class="hovered">
         </div>
         <a href="tracking.html">Sigue tu viaje</a>
-        <a id="contacto-summon" href="#">Conocenos</a>
+        <a href="#" onclick="summon()">Conocenos</a>
         <script src="/js/login.js"></script>
         <script src="https://accounts.google.com/gsi/client" async></script>
         <div class="button-group">
@@ -235,7 +236,7 @@
         <div class="selected-part"><div class="selected-text">Libre</div></div>
         <img src="/assets/Seleccionado.png">
         <div class="selected-part"><div class="selected-text">Seleccionado</div></div>
-        <button class="seats-confirm">Confirmar</button>
+        <button class="seats-confirm" onclick="window.location.href = 'passenger-information.html';">Confirmar</button>
     </div>
   </div>
 
