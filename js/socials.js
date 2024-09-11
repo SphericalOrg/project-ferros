@@ -1,5 +1,5 @@
-document.getElementById('contacto-summon').onclick = function(event) {
-    event.preventDefault();
+
+function summon() {
     document.getElementById('contacto').style.display = 'block';
 }
 
