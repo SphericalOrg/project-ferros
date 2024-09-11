@@ -5,11 +5,70 @@
     <link rel="stylesheet" href="/styles/panel.css">
     <link rel="stylesheet" href="/styles/commons.css">
     <link rel="stylesheet" href="/styles/trains.css">
+    <link rel="stylesheet" href="/styles/login-overlay.css">
     <script src="/js/sidebar.js"></script>
+    <script src="/js/admin-overlay.js"></script>
     <meta charset="UTF-8">
     <title>Tren Manejo</title>
 </head>
 <body>
+
+    <div class="popup-overlay" id="train">
+        <div class="overlay-content">   
+            <div class="section-header">Ingrese parametros del viaje</div>
+            <div class="section-body">
+                <div class="input-group">
+                    <label for="date">Fecha del Viaje</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="input-group">
+                    <label for="time">Hora de Salida</label>
+                    <input type="time" id="time" name="time">
+                </div>
+                <div class="input-group">
+                  <label for="origin">Origen</label>
+                  <select name="origin" id="origin" class="">
+                    <option value="Victoria">Victoria</option>
+                    <option value="PUA">PUA</option>
+                    <option value="Perquenco">Perquenco</option>
+                    <option value="Quillem">Quillem</option>
+                    <option value="Lautaro">Lautaro</option>
+                    <option value="Lautaro Centro">Lautaro Centro</option>
+                    <option value="Pillanlelbun">Pillanlelbun</option>
+                    <option value="Cajon">Cajon</option>
+                    <option value="Temuco">Temuco</option>
+                </select>
+                </div>
+                <div class="input-group">
+                  <label for="destination">Destino</label>
+                  <select name="destination" id="destination" class="">
+                    <option value="Victoria">Victoria</option>
+                    <option value="PUA">PUA</option>
+                    <option value="Perquenco">Perquenco</option>
+                    <option value="Quillem">Quillem</option>
+                    <option value="Lautaro">Lautaro</option>
+                    <option value="Lautaro Centro">Lautaro Centro</option>
+                    <option value="Pillanlelbun">Pillanlelbun</option>
+                    <option value="Cajon">Cajon</option>
+                    <option value="Temuco">Temuco</option>
+                </select>
+                </div>
+                <div class="input-group">
+                  <label for="train">Tren</label>
+                  <select name="train" id="train" class="">
+                    <option value="F35">F-35 Lightning II</option>
+                    <option value="F22">F-22 Raptor</option>
+                    <option value="suhakuto">Super Hakuto</option>
+                </select>
+                </div>
+            </div>
+            
+            <button type="submit" onclick="closeOverlay('train')">Agendar Tren</button>
+            </div>
+            
+        </div>
+      </div>
+
 <div id="mySidenav" class="sidenav">
   <img src="/assets/Logo%20Default.png" alt="">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -40,7 +99,7 @@
       <label for=""></label><input type="text" name="" id="" placeholder="Escribe algo">
   </div>
     <div class="add-trip">
-        <button type="submit">Agende Viaje</button>
+        <button type="submit" onclick="openOverlay('train')">Agende Viaje</button>
     </div>
     <div class="train-trips">
         <div class="train-category">
